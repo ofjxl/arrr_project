@@ -21,7 +21,9 @@
 }
 /* ===================== */
 /* 로그인 | 회원가입 */
-.my {
+.my {z-index: 999;
+    position: fixed; top: 52; right: 234px;
+    /* border: 1px solid red; */
     width: 1452px; margin: 0 auto;
     display: flex; justify-content: end;
     padding-top: 17px; padding-bottom: 17px;
@@ -41,7 +43,9 @@
 }
 /* ===================== */
 /* ---------------header */
-header {
+header {z-index: 999;
+    position: fixed; top: 84px; left: 234px;
+    /* border: 1px solid red; */
     width: 1452px; margin: 0 auto;
     display: flex; justify-content: space-between;
     align-items: center;
@@ -76,3 +80,105 @@ header .header_right a:last-child {margin-right: 0;}
 header .header_right a img {}
 /* ===================== */
 /* -----------------main */
+main {
+    width: 100%; margin: 0 auto;
+}
+main .main1 {}
+main .main1 .arrr {}
+/* ==swiper== */
+main .main1 .arrr .swiper {}
+main .main1 .arrr .main-slide {}
+main .main1 .arrr .swiper .swiper-wrapper {}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide {}
+/* -----------------------위 css건들면 안됨 */
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr {}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg {width: 100%;}
+/* main swiper 개별 이미지 */
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg1 {
+    background-image: url(../images/main_bg_1.jpg); 
+    width: 100%; height: 918px;
+    background-repeat: no-repeat;
+}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg2 {
+    background-image: url(../images/main_bg_2.jpg);
+    width: 100%; height: 918px;
+    background-repeat: no-repeat;
+}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg3 {
+    background-image: url(../images/main_bg_3.jpg);
+    width: 100%; height: 918px;
+    background-repeat: no-repeat;
+}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg4 {
+    background-image: url(../images/main_bg_4.jpg);
+    width: 100%; height: 918px;
+    background-repeat: no-repeat;
+}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg5 {
+    background-image: url(../images/main_bg_5.jpg);
+    width: 100%; height: 918px;
+    background-repeat: no-repeat;
+}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg6 {
+    background-image: url(../images/main_bg_6.jpg);
+    width: 100%; height: 918px;
+    background-repeat: no-repeat;
+}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg7 {
+    background-image: url(../images/main_bg_7.jpg);
+    width: 100%; height: 918px;
+    background-repeat: no-repeat;
+}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg8 {
+    background-image: url(../images/main_bg_8.jpg);
+    width: 100%; height: 918px;
+    background-repeat: no-repeat;
+}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg9 {
+    background-image: url(../images/main_bg_9.jpg);
+    width: 100%; height: 918px;
+    background-repeat: no-repeat;
+}
+/* ======swiper contents */
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg .contents {}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg .contents h2 {
+    padding-left: 312px; padding-top: 311px;
+    font-size: 3.75rem; font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 87px;
+}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg .contents p {
+    padding-left: 312px;
+    font-size: 1.063rem; letter-spacing: -0.2px;
+    color: #999;
+}
+main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg .contents p span {font-size:  1.063rem; font-weight: 700;}
+/* swiper (화살표 디자인) */
+main .main1 .arrr .swiper-button-next {
+    color: rgb(0, 0, 0, 0.5); /* right: -150px; */
+}
+main .main1 .arrr .swiper-button-prev {
+    color: rgb(0, 0, 0, 0.5); /* left: -150px; */
+} /* ?? */
+/* ====================================== */
+main .main2 {
+    width: 882px; 
+    margin: 0 auto; margin-top: 87px; text-align: center;
+    margin-bottom: 80px;
+}
+main .main2 .arrr_menu {/* border: 1px solid blue; */
+    display: flex;
+}
+main .main2 .arrr_menu li {
+    margin-right: 30px; /* border: 1px solid red; */
+}
+main .main2 .arrr_menu li:last-child {margin-right: 0;}
+main .main2 .arrr_menu li a {
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+}
+main .main2 .arrr_menu li a img {
+    margin-bottom: 12px;
+}
+main .main2 .arrr_menu li a span {}
+/* ================================ */

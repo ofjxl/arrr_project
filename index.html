@@ -6,6 +6,13 @@
     <title>arrr | 메인 페이지</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script/index.js" defer></script>
 </head>
 <body>
     <div class="coupon"><!-- today_none을 누르면 자바스크립트로 하루 안보이게 해야됨 -->
@@ -67,10 +74,136 @@
             <div class="arrr">
                 <div class="swiper main-slide">
                     <div class="swiper-wrapper">
-                        <div class="swiper_arrr">
-                            <div class="bg bg1"><img src="./images/main_bg_1.jpg" alt=""></div>
+                        <div class="swiper-slide">
+                            <div class="swiper_arrr">
+                                <div class="bg bg1">
+                                    <div class="contents">
+                                        <h2>한여름에도<br>아르르하다</h2>
+                                        <p>더욱 시원한 최저가 혜택 <span>~53%</span> 할인부터 무료배송까지!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_arrr">
+                                <div class="bg bg2">
+                                    <div class="contents">
+                                        <h2>여름을 책임질<br>마이버디 쿨매트</h2>
+                                        <p><span>S + L</span> 세트 할인부터 사은품 증정 이벤트까지!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_arrr">
+                                <div class="bg bg3">
+                                    <div class="contents">
+                                        <h2>데일리한 여름 산책룩<br>하트 끈나시</h2>
+                                        <p>한정수량 선캡 세트도 놓치지 마세요!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_arrr">
+                                <div class="bg bg4">
+                                    <div class="contents">
+                                        <h2>아르르 워킹템과 함께<br>산책하기 좋은 날</h2>
+                                        <p>워킹템 <span>5,900</span>원 부터 ~ 시즌할인 진행중!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_arrr">
+                                <div class="bg bg5">
+                                    <div class="contents">
+                                        <h2>100% 원물 영양 가득<br>토이트릿 열빙어</h2>
+                                        <p>머리부터 꼬리까지 꽉-찬 고칼슘 아이슬란드산 천연 열빙어 트릿</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_arrr">
+                                <div class="bg bg6">
+                                    <div class="contents">
+                                        <h2>산책 라이프에 핏-한<br>마이핏 하네스 V2</h2>
+                                        <p>체형에 딱 맞춘 핏으로 현안하고 안전한 하네스</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_arrr">
+                                <div class="bg bg7">
+                                    <div class="contents">
+                                        <h2>육류 90% 기능성<br>사르르 미니캔 닥터</h2>
+                                        <p>헤어볼&요로계 케어까지 기능성 가득 미니캔</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_arrr">
+                                <div class="bg bg8">
+                                    <div class="contents">
+                                        <h2>아울렛 라스트피스<br>한정수량 ~ 76%</h2>
+                                        <p>놓치면 품절! <span>5,900</span>원부터 선착순 특가!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_arrr">
+                                <div class="bg bg9">
+                                    <div class="contents">
+                                        <h2>12시간 동안<br>아르르 하다</h2>
+                                        <p>깊게 잠들지 못하는 아이들에게 달콤한 꿀잠을</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="main2">
+            <ul class="arrr_menu">
+                <li><a href="#"><img src="./images/main2_1img.jpg" alt=""><span>이벤트</span></a></li>
+                <li><a href="#"><img src="./images/main2_2img.jpg" alt=""><span>방석</span></a></li>
+                <li><a href="#"><img src="./images/main2_3img.jpg" alt=""><span>가방</span></a></li>
+                <li><a href="#"><img src="./images/main2_4img.jpg" alt=""><span>하네스</span></a></li>
+                <li><a href="#"><img src="./images/main2_5img.jpg" alt=""><span>푸드</span></a></li>
+                <li><a href="#"><img src="./images/main2_6img.jpg" alt=""><span>모래</span></a></li>
+                <li><a href="#"><img src="./images/main2_7img.jpg" alt=""><span>패드</span></a></li>
+                <li><a href="#"><img src="./images/main2_8img.jpg" alt=""><span>체험단</span></a></li>
+            </ul>
+        </div>
+        <div class="main3">
+            <h3>Event</h3>
+            <a href="#"><span>전체보기</span><img src="./images/icon_main3_right_arrow.jpg" alt=""></a>
+            <div class="event_contents">
+                <div class="first">
+                    <a href="#">
+                        <p><img src="./images/main3_1img.jpg" alt=""></p>
+                        <p class="event_title">한여름에도 꿀잠으로 아르르하다</p>
+                        <p class="event_date">2024.06.26 (수 ~)</p>
+                    </a>
+                </div>
+                <div class="second">
+                    <a href="#">
+                        <p><img src="./images/main3_2img.jpg" alt=""></p>
+                        <p class="event_title">[체험단 모집] 더 건강한 퓨르</p>
+                        <p class="event_date">2024.06.26 (수) ~ 2024.06.30 (일)</p>
+                    </a>
+                </div>
+                <div class="third">
+                    <p><img src="./images/main3_3img.jpg" alt=""></p>
+                    <p class="event_title">아르르 꿀잠 캠페인</p>
+                    <p class="event_date">2024.05.01 (수) ~</p>
                 </div>
             </div>
         </div>
