@@ -1,0 +1,78 @@
+/* 앱 전용 쿠폰 2종 받기 */
+.coupon {
+    width: 100%; margin:0 auto;
+    background-color: #474949;
+}
+.coupon a {
+    width: 1452px; margin: 0 234px;
+    display: flex;
+    padding: 10px 0;
+    justify-content: end;
+    text-align: center;
+}
+.coupon a .coupon_receive {
+    margin-right: 567px;
+    color: #fff;
+    font-size: 0.938rem; 
+}
+.coupon a .today_none {
+    color: #fff;
+    font-size: 0.813rem;
+}
+/* ===================== */
+/* 로그인 | 회원가입 */
+.my {
+    width: 1452px; margin: 0 auto;
+    display: flex; justify-content: end;
+    padding-top: 17px; padding-bottom: 17px;
+}
+.my .login {
+    color: #888;
+    font-size: 0.813rem;
+}
+.my .login::after {
+    content: '';
+    height: 4px; border: 0.5px solid #888;
+    margin: 0 14px;
+}
+.my .join {
+    color: #888;
+    font-size: 0.813rem;
+}
+/* ===================== */
+/* ---------------header */
+header {
+    width: 1452px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+    align-items: center;
+}
+/* logo */
+header h1 {}
+header h1 a {}
+header h1 a img {}
+/* ----nav */
+header nav {}
+/* 메인메뉴 */
+header nav .gnb {
+    display: flex;
+}
+header nav .gnb li {
+    margin-right: 50px;
+}
+header nav .gnb li:last-child {margin-right: 0;}
+header nav .gnb li a {}
+/* 서브메뉴 */
+header nav .gnb li .sub {
+    display: none;
+}
+header nav .gnb li .sub li {}
+header nav .gnb li .sub li a {}
+/* search, clock, cart -> icon */
+header .header_right {}
+header .header_right a {
+    margin-right: 22px;
+}
+header .header_right a:last-child {margin-right: 0;}
+header .header_right a img {}
+/* ===================== */
+/* -----------------main */
