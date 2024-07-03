@@ -9,8 +9,8 @@ const main_s = new Swiper(".main-slide",{
 const product_s = new Swiper(".product-slide",{
     slidesPerView:3,
     spaceBetween:44,
-    /* navigation:{
+    navigation:{
         nextEl: ".product-slide .swiper-button-next",
-        prevEl: ".product-slide .swiper-butto-prev",
-    }, */
+        prevEl: ".product-slide .swiper-button-prev",
+    },
 })

@@ -20,64 +20,62 @@
     font-size: 0.813rem;
 }
 /* ===================== */
-/* 로그인 | 회원가입 */
-.my {z-index: 999;
-    position: fixed; top: 52; right: 234px;
+/* ---------------header */
+header {z-index: 999;
+    position: absolute; top: 84px; left: 234px;
+    /* border: 1px solid red; */
+    width: 1452px; margin: 0 auto;
+}
+header .header_top {
     /* border: 1px solid red; */
     width: 1452px; margin: 0 auto;
     display: flex; justify-content: end;
-    padding-top: 17px; padding-bottom: 17px;
+    margin-bottom: 16px;
 }
-.my .login {
+header .header_top .login {
     color: #888;
     font-size: 0.813rem;
 }
-.my .login::after {
+header .header_top .login::after {
     content: '';
     height: 4px; border: 0.5px solid #888;
     margin: 0 14px;
 }
-.my .join {
+header .header_top .join {
     color: #888;
     font-size: 0.813rem;
 }
-/* ===================== */
-/* ---------------header */
-header {z-index: 999;
-    position: fixed; top: 84px; left: 234px;
-    /* border: 1px solid red; */
-    width: 1452px; margin: 0 auto;
-    display: flex; justify-content: space-between;
-    align-items: center;
-}
 /* logo */
-header h1 {}
-header h1 a {}
-header h1 a img {}
+header .header_bottom {
+    display: flex; justify-content: space-between; align-items: center;
+}
+header .header_bottom h1 {}
+header .header_bottom h1 a {}
+header .header_bottom h1 a img {}
 /* ----nav */
-header nav {}
+header .header_bottom nav {}
 /* 메인메뉴 */
-header nav .gnb {
+header .header_bottom nav .gnb {
     display: flex;
 }
-header nav .gnb li {
+header .header_bottom nav .gnb li {
     margin-right: 50px;
 }
-header nav .gnb li:last-child {margin-right: 0;}
-header nav .gnb li a {}
+header .header_bottom nav .gnb li:last-child {margin-right: 0;}
+header .header_bottom nav .gnb li a {}
 /* 서브메뉴 */
-header nav .gnb li .sub {
+header .header_bottom nav .gnb li .sub {
     display: none;
 }
-header nav .gnb li .sub li {}
-header nav .gnb li .sub li a {}
+header .header_bottom nav .gnb li .sub li {}
+header .header_bottom nav .gnb li .sub li a {}
 /* search, clock, cart -> icon */
-header .header_right {}
-header .header_right a {
+header .header_bottom .header_right {}
+header .header_bottom .header_right a {
     margin-right: 22px;
 }
-header .header_right a:last-child {margin-right: 0;}
-header .header_right a img {}
+header .header_bottom .header_right a:last-child {margin-right: 0;}
+header .header_bottom .header_right a img {}
 /* ===================== */
 /* -----------------main */
 main {
@@ -189,7 +187,7 @@ main .main3 {
     border-bottom: 1px solid #B7B7B7;
 }
 main .main3 h3 {/* border: 1px solid blue; */
-    font-size: 2.188rem; font-weight: 700;
+    font-size: 2.188rem; font-family: 'Francois One', sans-serif;
     margin-bottom: 25px; text-align: center;
 }
 main .main3 > a {/* border: 1px solid red; */
@@ -202,41 +200,20 @@ main .main3 a img {}
 main .main3 .event_contents {
     display: flex; margin: 0 auto; justify-content: center;
 }
-main .main3 .event_contents .first {margin-right: 44px;}
-main .main3 .event_contents .first a {}
-main .main3 .event_contents .first a .event_img {margin-bottom: 12px;}
-main .main3 .event_contents .first a .event_img img {}
-main .main3 .event_contents .first a .event_title {
+main .main3 .event_contents .event_product {margin-right: 44px;}
+main .main3 .event_contents .event_product a {}
+main .main3 .event_contents .event_product a .event_img {margin-bottom: 12px;}
+main .main3 .event_contents .event_product a .event_img img {}
+main .main3 .event_contents .event_product a .event_title {
     font-size: 1.25rem; font-weight: 500; 
     margin-bottom: 5px;
 }
-main .main3 .event_contents .first a .event_date {}
-main .main3 .event_contents .second {margin-right: 44px;}
-main .main3 .event_contents .second a {}
-main .main3 .event_contents .second a .event_img {margin-bottom: 12px;}
-main .main3 .event_contents .second a .event_img img {}
-main .main3 .event_contents .second a .event_title {
-    font-size: 1.25rem; font-weight: 500;
-    margin-bottom: 5px;
-}
-main .main3 .event_contents .second a .event_date {
-    font-size: 1.125rem; 
-}
-main .main3 .event_contents .third {margin-right: 44px;}
-main .main3 .event_contents .third a {}
-main .main3 .event_contents .third a .event_img {margin-bottom: 12px;}
-main .main3 .event_contents .third a .event_img img {}
-main .main3 .event_contents .third a .evnet_title {
-    font-size: 1.25rem; font-weight: 500;
-    margin-bottom: 5px;
-}
-main .main3 .event_contents .third a .evnet_date {}
+main .main3 .event_contents .event_product a .event_date {}
 /* ================================================= */
 /* -------------------------------------------main4 */
 main .main4_{
     width: 100%; margin: 0 auto;
     padding-bottom: 53px;
-    font-family: 'Francois One', sans-serif;
 }
 main .main4 .main4_contents {
     width: 1452px; margin: 0 auto; 
@@ -246,13 +223,14 @@ main .main4 .main4_contents h3 {
     margin-top: 43px;
     font-size: 2.813rem;
     margin-bottom: 14px;
+    font-family: 'Francois One', sans-serif;
 }
-main .main4 .main4_contents p {margin-bottom: 32px;}
+main .main4 .main4_contents p {margin-bottom: 32px; font-family: 'Francois One', sans-serif;}
 main .main4 .main4_contents a {
     display: flex; align-items: center;
     border-bottom: 1px solid #000; display: inline-block;
 }
-main .main4 .main4_contents a span {font-weight: 700;}
+main .main4 .main4_contents a span {font-family: 'Francois One', sans-serif;}
 main .main4 .main4_contents a img {margin-left: 247px;}
 main .main4 .main4_all_swiper {
     width: 1452px; margin: 0 auto;
@@ -279,4 +257,12 @@ main .main4 .main4_all_swiper .arr_all_product .swiper .swiper-wrapper .swiper-s
 }
 main .main4 .main4_all_swiper .arr_all_product .swiper .swiper-wrapper .swiper-slide .swiper_arr_all a .product_price span {
     font-size: 1.188rem; 
+}
+main .main4 .main4_all_swiper .arr_all_product .swiper .swiper-button-next {
+    color: #fff; background-color: #AAAAAA;
+    width: 26px; height: 26px;
+}
+main .main4 .main4_all_swiper .arr_all_product .swiper .swiper-button-prev {
+    color: #fff; background-color: #aaa;
+    width: 26px; height: 26px;
 }
