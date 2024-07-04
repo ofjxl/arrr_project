@@ -13,4 +13,8 @@ const product_s = new Swiper(".product-slide",{
         nextEl: ".product-slide .swiper-button-next",
         prevEl: ".product-slide .swiper-button-prev",
     },
+    pagination: {
+        el: ".arr_all_product .swiper-pagination",
+        type: "progressbar",
+    },
 })

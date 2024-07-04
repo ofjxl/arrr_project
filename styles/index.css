@@ -22,7 +22,7 @@
 /* ===================== */
 /* ---------------header */
 header {z-index: 999;
-    position: absolute; top: 84px; left: 234px;
+    position: absolute; top: 84px; left: 50%; transform: translateX(-50%);
     /* border: 1px solid red; */
     width: 1452px; margin: 0 auto;
 }
@@ -66,8 +66,30 @@ header .header_bottom nav .gnb li a {}
 /* 서브메뉴 */
 header .header_bottom nav .gnb li .sub {
     display: none;
+    border: 1px solid #000;
+    text-align: center; 
+    margin-top: 12px;
+    border-radius: 3px;
 }
-header .header_bottom nav .gnb li .sub li {}
+header .header_bottom nav .gnb li .sub:nth-child(1) {
+    width: 100px; margin-top: 17px; margin-left: 22px;
+}
+header .header_bottom nav .gnb li .sub:nth-child(2) {
+    width: 112px;
+}
+header .header_bottom nav .gnb li .sub:nth-child(3) {
+    width: 100px;
+}
+header .header_bottom nav .gnb li .sub li {
+    margin-bottom: 18px;
+}
+header .header_bottom nav .gnb li .sub li:nth-child(1) {
+
+}
+header .header_bottom nav .gnb li .sub li:nth-child(2) {}
+header .header_bottom nav .gnb li .sub li:nth-child(3) {
+    margin-bottom: 18px;
+}
 header .header_bottom nav .gnb li .sub li a {}
 /* search, clock, cart -> icon */
 header .header_bottom .header_right {}
@@ -81,7 +103,7 @@ header .header_bottom .header_right a img {}
 main {
     width: 100%; margin: 0 auto;
 }
-main .main1 {}
+main .main1 {width: 1920px; margin: 0 auto;}
 main .main1 .arrr {}
 /* ==swiper== */
 main .main1 .arrr .swiper {}
@@ -153,11 +175,19 @@ main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg .conten
 main .main1 .arrr .swiper .swiper-wrapper .swiper-slide .swiper_arrr .bg .contents p span {font-size:  1.063rem; font-weight: 700;}
 /* swiper (화살표 디자인) */
 main .main1 .arrr .swiper-button-next {
-    color: rgb(0, 0, 0, 0.5); /* right: -150px; */
+    color: rgb(0, 0, 0, 0.5); right: 50px;
+    border: 1px solid rgb(0, 0, 0, 0.5); width: 60px; height: 60px;
+    border-radius: 50%;
 }
 main .main1 .arrr .swiper-button-prev {
-    color: rgb(0, 0, 0, 0.5); /* left: -150px; */
+    color: rgb(0, 0, 0, 0.5); left: 50px;
+    border: 1px solid rgb(0, 0, 0, 0.5); width: 60px; height: 60px;
+    border-radius: 50%;
 } /* ?? */
+main .main1 .arrr .swiper-button-prev::after,
+main .main1 .arrr .swiper-button-next::after {
+    transform: scale(0.5);
+}
 /* ====================================== */
 main .main2 {
     width: 882px; 
@@ -182,7 +212,7 @@ main .main2 .arrr_menu li a span {}
 /* ================================ */
 /* ----------------------------main3 */
 main .main3 {
-    width: 100%; margin: 0 auto;
+    width: 1447px; margin: 0 auto;
     padding-bottom: 110px;
     border-bottom: 1px solid #B7B7B7;
 }
@@ -190,7 +220,7 @@ main .main3 h3 {/* border: 1px solid blue; */
     font-size: 2.188rem; font-family: 'Francois One', sans-serif;
     margin-bottom: 25px; text-align: center;
 }
-main .main3 > a {/* border: 1px solid red; */
+main .main3 > a {
     display: flex; align-items: center;
     justify-content: end;
     margin-bottom: 28px;
@@ -198,9 +228,11 @@ main .main3 > a {/* border: 1px solid red; */
 main .main3 a span {font-size: 1.063rem;}
 main .main3 a img {}
 main .main3 .event_contents {
-    display: flex; margin: 0 auto; justify-content: center;
+    width: 1447px; margin: 0 auto;
+    display: flex; justify-content: center;
 }
 main .main3 .event_contents .event_product {margin-right: 44px;}
+main .main3 .event_contents .event_product:last-child {margin-right: 0;}
 main .main3 .event_contents .event_product a {}
 main .main3 .event_contents .event_product a .event_img {margin-bottom: 12px;}
 main .main3 .event_contents .event_product a .event_img img {}
@@ -208,7 +240,9 @@ main .main3 .event_contents .event_product a .event_title {
     font-size: 1.25rem; font-weight: 500; 
     margin-bottom: 5px;
 }
-main .main3 .event_contents .event_product a .event_date {}
+main .main3 .event_contents .event_product a .event_date {
+    font-size: 1.125rem;
+}
 /* ================================================= */
 /* -------------------------------------------main4 */
 main .main4_{
@@ -227,15 +261,25 @@ main .main4 .main4_contents h3 {
 }
 main .main4 .main4_contents p {margin-bottom: 32px; font-family: 'Francois One', sans-serif;}
 main .main4 .main4_contents a {
-    display: flex; align-items: center;
+    display: flex; align-items: center; justify-content: space-between;
     border-bottom: 1px solid #000; display: inline-block;
+    width: 295px;
 }
-main .main4 .main4_contents a span {font-family: 'Francois One', sans-serif;}
-main .main4 .main4_contents a img {margin-left: 247px;}
+main .main4 .main4_contents a span {
+    /* border: 1px solid blue; */
+    font-family: 'Francois One', sans-serif;
+}
+main .main4 .main4_contents a img {
+    margin-left: 247px;
+}
 main .main4 .main4_all_swiper {
     width: 1452px; margin: 0 auto;
+    /* border: 1px solid red; */
+    padding-bottom: 53px;
 }
-main .main4 .main4_all_swiper .arr_all_product {}
+main .main4 .main4_all_swiper .arr_all_product {
+    position: relative; 
+}
 /* ----swiper 시작 */
 main .main4 .main4_all_swiper .arr_all_product .swiper {}
 main .main4 .main4_all_swiper .arr_all_product .product-slide {}
@@ -261,8 +305,137 @@ main .main4 .main4_all_swiper .arr_all_product .swiper .swiper-wrapper .swiper-s
 main .main4 .main4_all_swiper .arr_all_product .swiper .swiper-button-next {
     color: #fff; background-color: #AAAAAA;
     width: 26px; height: 26px;
+    transform: scale(1.5);
 }
 main .main4 .main4_all_swiper .arr_all_product .swiper .swiper-button-prev {
     color: #fff; background-color: #aaa;
     width: 26px; height: 26px;
+    transform: scale(1.5);
 }
+main .main4 .main4_all_swiper .arr_all_product .swiper .swiper-button-next::after,
+main .main4 .main4_all_swiper .arr_all_product .swiper .swiper-button-prev::after {
+    transform: scale(0.4);
+}
+main .main4 .main4_all_swiper .arr_all_product .swiper-pagination {
+    top: 555px;
+    background-color: #999;
+}
+main .main4 .main4_all_swiper .arr_all_product .swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: #000;
+}
+/* ======================================================================= */
+main .main5 {
+    width: 1452px; margin: 0 auto;
+    display: flex;
+    margin-top: 100px; margin-bottom: 100px;
+    text-align: center;
+}
+main .main5 .main5_img {}
+main .main5 .main5_img img {}
+main .main5 .membership {
+    background-color: #000; width: 773px;
+    padding: 39px 0 39px;
+}
+main .main5 .membership a {}
+main .main5 .membership a .membership_title {
+    font-size: 2.313rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+main .main5 .membership a .membership_content {
+    font-size: 1.375rem; letter-spacing: -0.2px;
+    color: #fff;
+}
+main .main5 .review {
+    background-color: #F3F3F3;
+    width: 679px;
+    padding: 39px 0 39px;
+}
+main .main5 .review a {}
+main .main5 .review a .review_title {
+    font-size: 2.313rem; font-weight: 700;
+    margin-bottom: 5px;
+}
+main .main5 .review a .review_content {
+    font-size: 1.375rem; letter-spacing: -0.2px;
+}
+/* ========================================= */
+main .main6 {
+    width: 1364px; margin: 0 auto;
+}
+main .main6 h3 {
+    text-align: center;
+    font-size: 1.75rem; font-family: 'francois one', sans-serif;
+    margin-bottom: 18px;
+}
+main .main6 .main6_content {
+    font-size: 1.063rem; letter-spacing: -0.2px;
+    text-align: center;
+}
+/* --------- 상품 */
+main .main6 .main6_product {
+    margin-top: 33px; margin-bottom: 107px;
+    display: flex; justify-content: space-between; align-items: center;
+    background-color: lightblue;
+}
+main .main6 .main6_product a {}
+main .main6 .main6_product a .best_img {}
+main .main6 .main6_product a .best_img img {}
+main .main6 .main6_product a .best_img .net1 {
+    position: absolute; top: 3064px; left: 292px;
+}
+main .main6 .main6_product a .best_img .net2 {}
+main .main6 .main6_product a .best_img .net3 {}
+main .main6 .main6_product a .best_img .net4 {}
+main .main6 .main6_product a .best_img .net img {}
+main .main6 .main6_product a .best_img .new1 {
+    position: absolute; left: 329px;
+    border: 1px solid blue;
+}
+main .main6 .main6_product a .best_img .new2 {}
+main .main6 .main6_product a .best_img .new3 {}
+main .main6 .main6_product a .best_img .new4 {}
+main .main6 .main6_product a .best_img .new img {}
+main .main6 .main6_product a .best_title {
+    font-size: 1.063rem;
+    margin-bottom: 13px;
+}
+main .main6 .main6_product a .best_price {
+    font-weight: 600;
+}
+main .main6 .main6_product a .best_price > span {
+    font-weight: 700; font-size: 1.438rem; 
+}
+main .main6 .main6_product a .best_price .percent {
+    font-size: 1.438rem; font-weight: 400;
+}
+main .main6 .main6_product a .best_price del {color: #C2C2C2;}
+/* ============================================================== */
+main .main7_bg {
+    background-image: url(../images/main7_bg.jpg);
+    width: 100%; margin: 0 auto; /* height: 542px; */
+    margin-bottom: 131px;
+}
+main .main7_bg .main7 {
+    width: 1920px; margin: 0 auto;
+    padding-top: 141px; padding-left: 339px; padding-bottom: 141px;
+}
+main .main7_bg .main7 h3 {
+    font-size: 2.625rem; font-family: 'francois one',sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+}
+main .main7_bg .main7 .main7_content {
+    font-size: 1.063rem; line-height: 28px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+main .main7_bg .main7 .about_btn {
+    width: 205px; background-color: #000;
+    color: #fff;
+    font-size: 1.125rem; font-family: 'francois one', sans-serif;
+    padding: 10px 55px;
+    border-radius: 3px;
+}
+/* ============================================================== */
+main .main8_bg {}
